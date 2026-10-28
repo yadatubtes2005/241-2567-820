@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .button{
+        background-color: rgb(159, 218, 179);
+        padding: 10px;
+        border: 0;
+    }
+    .button:hover{
+        background-color: rgb(179, 116, 161);
+    }
+    .button:active{
+        background-color: rgb(131, 75, 253);
+        color: white;
+    }
+    .button:focus{
+        background-color: rgb(129, 227, 129);
+    }
+    input:focus{
+        background-color: rgb(239, 140, 237);
+    }
+    
+    .container .item:first-child{
+        background-color: rgb(116, 107, 240);
+    }
+    .container .item:nth-child(3){
+        background-color: rgb(175, 243, 147);
+    }
+    .container .item:last-child{
+        background-color: rgb(237, 157, 105);
+    }
+</style>
+
+<body>
+    <!-- hover=ชี้ active=คลิก focus=cursor -->
+    <input type="text">
+    <button class="button">button</button>
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+    </div>
+</body>
+</html>
